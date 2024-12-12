@@ -69,11 +69,11 @@ nav ul li a:hover {
     background-color: #777;
 }
 
-.half-content{padding:20px;
+.main-content{padding:20px;
     background-image: url("images.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    min-height: calc(100vh - 87px);
     background-position:center;
 }
 
@@ -88,4 +88,37 @@ font-size: 42px;
 .half-content p{
     color: black;
     max-width: 50vw;
+}
+
+.align{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+.align h4{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.align div{
+    display:flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+text-align: center;
+}
+
+.form-element label{
+    display: block;
+    margin-bottom: 8px;
+}
+.form-element textarea, .form-element input{
+    padding:10px;
+    width: 300px;
+    margin-bottom: 8px;
+
+}
+
+#view-result img{
+    max-height:200px
 }
